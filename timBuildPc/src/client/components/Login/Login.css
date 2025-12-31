@@ -1,0 +1,97 @@
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  min-height: 300px;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#formLogin {
+  padding-top: 1px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(31, 39, 148, 1) 0%, rgba(222, 73, 172, 1) 62%, rgba(255, 128, 0, 1) 100%);
+}
+
+
+.loginForm input{
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+ 
+}
+
+.loginForm input:focus {
+  border-color: #5563de;
+  outline: none;
+  box-shadow: 0 0 5px rgba(85, 99, 222, 0.3);
+}
+
+
+.password-container {
+  position: relative;
+  width: 300px;
+ 
+}
+
+#password{
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 294px;
+   
+}
+
+.eye-icon {
+  position: absolute;
+  right: 1px;
+  top: 41%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+.errors {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin: -0.5rem 0 0.75rem 0;
+}
+
+
+.loginForm button {
+  padding: 0.75rem;
+  background: #5563de;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginForm button:disabled {
+  background: #a3e3b2;
+  cursor: not-allowed;
+}
+
+.loginForm button:hover:enabled {
+  background: #3fb84b;
+}

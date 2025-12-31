@@ -1,0 +1,63 @@
+.regForm{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 320px;
+  min-height: 300px;
+
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.regFormInner{
+     padding-top:0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+     background: #1f2794;
+  background: linear-gradient(90deg, rgba(31, 39, 148, 1) 0%, rgba(222, 73, 172, 1) 62%, rgba(255, 128, 0, 1) 100%);
+}
+
+
+.regForm input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.regForm input:focus {
+  border-color: #5563DE;
+  outline: none;
+  box-shadow: 0 0 5px rgba(85, 99, 222, 0.3);
+}
+
+.regForm div {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin: -0.5rem 0 0.75rem 0;
+  
+}
+
+.regForm button {
+  padding: 0.75rem;
+  background: #55d55d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
