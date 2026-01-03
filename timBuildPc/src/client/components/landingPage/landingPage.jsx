@@ -1,72 +1,122 @@
 import Button from "../Tools/button/button.jsx";
 import { Cpu, Zap, Shield } from "lucide-react";
+import './landingPage.css'
+import Header from "../header/header.jsx";
 
 function LandingPage() {
   return (
-    <div>
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 to-black"></div>
-
-      <div className="container mx-auto relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-            Build Your Dream PC
-          </h1>
-
-          <p className="text-xl text-zinc-400 mb-8">
-            Expert custom PC builds tailored to your needs. Gaming, professional
-            workstations, or everyday computing - we deliver performance and quality.
-          </p>
-
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Get Started
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-zinc-700 text-white hover:bg-zinc-900"
-            >
-              View Builds
-            </Button>
-          </div>
+    <div className="app">
+        {/* Header */}
+        <div>
+          <Header/>
         </div>
-      </div>
+       
 
-      <div className="features">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Cpu className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl mb-2">Premium Components</h3>
-              <p className="text-zinc-400">
-                Only the best parts from trusted manufacturers
-              </p>
-            </div>
+        {/* Hero */}
+        <section className="hero">
+          <div className="hero-bg"></div>
 
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl mb-2">Expert Assembly</h3>
-              <p className="text-zinc-400">
-                Professional cable management and testing
-              </p>
-            </div>
+          <div className="container hero-content">
+            <div className="hero-text">
+              <h1 className="hero-title">Build Your Dream PC</h1>
 
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl mb-2">Warranty & Support</h3>
-              <p className="text-zinc-400">
-                1-year warranty and lifetime technical support
+              <p className="hero-description">
+                Expert custom PC builds tailored to your needs. Gaming, professional
+                workstations, or everyday computing – we deliver performance and quality.
               </p>
+
+              <div className="hero-actions">
+                <Button size="lg" text='Get Started' className="btn-primary">
+                 
+                </Button>
+                <Button size="lg"  text="View Builds" className="btn-outline">
+                  
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        {/* Features */}
+        <section className="features">
+          <div className="container">
+            <div className="features-grid">
+              <div className="feature">
+                <div className="feature-icon">
+                  <Cpu />
+                </div>
+                <h3>Premium Components</h3>
+                <p>Only the best parts from trusted manufacturers</p>
+              </div>
+
+              <div className="feature">
+                <div className="feature-icon">
+                  <Zap />
+                </div>
+                <h3>Expert Assembly</h3>
+                <p>Professional cable management and testing</p>
+              </div>
+
+              <div className="feature">
+                <div className="feature-icon">
+                  <Shield />
+                </div>
+                <h3>Warranty & Support</h3>
+                <p>1-year warranty and lifetime technical support</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Builds */}
+        <section id="builds" className="builds">
+          <div className="container">
+            <div className="section-header">
+              <h2>Pre-Configured Builds</h2>
+              <p>Choose from our expertly designed configurations</p>
+            </div>
+
+            <div className="builds-grid">
+              {/* {pcBuilds.map((build) => (
+                // <PCBuildCard key={build.title} {...build} />
+              ))} */}
+            </div>
+          </div>
+        </section>
+
+        {/* Calculator */}
+        <section id="calculator" className="calculator">
+          <div className="container">
+            <div className="section-header">
+              <h2>Calculate Your Build</h2>
+              <p>Customize every component and see the price in real-time</p>
+            </div>
+
+            <div className="calculator-box">
+              {/* <PriceCalculator /> */}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="cta">
+          <div className="container">
+            <div className="cta-box">
+              <h2>Ready to Build Your PC?</h2>
+              <p>Contact Me Today For A Personalised Consultation</p>
+              <Button size="lg" text='Get in Touch' className="btn-light">
+                
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="footer">
+          <div className="container">
+          
+          </div>
+        </footer>
     </div>
   );
 }
